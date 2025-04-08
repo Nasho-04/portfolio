@@ -99,7 +99,7 @@ section {
     font-size: clamp(1.5rem, 2vw, 2.5rem);
     word-spacing: 2px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: left; 
     animation: view-right .5s;
     animation-timing-function: linear;
     filter: drop-shadow(0px 0px 10px var(--tertiary-color)) drop-shadow(0px 0px 10px var(--tertiary-color)) drop-shadow(0px 0px 10px var(--tertiary-color));
@@ -142,12 +142,12 @@ h1 {
     gap: 20px;
     height: fit-content;
     background-color: var(--tertiary-color);
-    width: 100%;
+    width: 100%;/* 
     animation-name: view-left;
     animation-timing-function: linear;
     animation-timeline: view();
     animation-range-start: cover -1%;
-    animation-range-end: cover 25%;
+    animation-range-end: cover 25%; */
 }
 
 #projects-title {
@@ -236,12 +236,12 @@ h3 {
     padding: 40px;
     box-shadow: 0px 0px 50px var(--tertiary-color);
     gap: 30px;
-    font-size: 18px;
+    font-size: 18px;/* 
     animation-name: fade-in;
     animation-timing-function: linear;
     animation-timeline: view();
     animation-range-start: cover -10%;
-    animation-range-end: cover 35%;
+    animation-range-end: cover 35%; */
 }
 
 #about-me-title {
@@ -283,12 +283,12 @@ h3 {
     gap: 100px;
     height: fit-content;
     background-color: #999;
-    padding: 20px 40px;
+    padding: 20px 40px;/* 
     animation-name: view-left;
     animation-timing-function: linear;
     animation-timeline: view();
     animation-range-start: cover 0%;
-    animation-range-end: contain -1%;
+    animation-range-end: contain -1%; */
 }
 
 .contact-divider {
@@ -358,7 +358,7 @@ h3 {
     text-decoration: underline;
 }
 
-#flag svg {
+#flag {
     width: 70px;
     height: 70px;
     position: fixed;
@@ -439,6 +439,10 @@ h3 {
 
 @media screen and (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     #home {
         flex-direction: column;
         gap: 40px;
@@ -479,6 +483,10 @@ h3 {
 }
 
 @media screen and (max-width: 500px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     #header {
         height: 6dvh;
