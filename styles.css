@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    scrollbar-color: var(--primary-color) var(--secondary-color);
 }
 
 :root {
@@ -18,6 +16,9 @@ body {
     min-height: 100vh;
     width: 100dvw;
     overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary-color) var(--secondary-color);
 }
 
 section {
@@ -522,6 +523,7 @@ h3 {
 
     #projects-container {
         gap: 20px;
+        min-width: 300px;
     }
 
     #projects-container a {
