@@ -437,6 +437,10 @@ h3 {
         align-items: start;
         gap: 10px;
     }
+
+    #projects {
+        animation-name: none
+    }
     }
 
 
