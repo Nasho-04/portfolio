@@ -65,7 +65,7 @@ const english_texts = {
             {
                 title: "E-Commerce",
                 description: "This was the final project of the full-stack web development course. In this project, I used React for the frontend, where I was able to apply various concepts, including making requests to a RESTful API. On the backend, I used Node.js and Express to create the API, and MongoDB for data management. The project was a great challenge, but it allowed me to learn a lot about web development, especially about the backend.",
-                url: "https://frontend-fp-two.vercel.app/home",
+                url: "https://frontend-fp-two.vercel.app/",
                 img: "proyecto2.jpg"
             },
             {
