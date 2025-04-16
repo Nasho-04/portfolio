@@ -100,7 +100,7 @@ section {
     font-size: clamp(1.5rem, 2vw, 2.5rem);
     word-spacing: 2px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left; 
+    text-align: left;
     animation: view-right .5s;
     animation-timing-function: linear;
     filter: drop-shadow(0px 0px 10px var(--tertiary-color)) drop-shadow(0px 0px 10px var(--tertiary-color)) drop-shadow(0px 0px 10px var(--tertiary-color));
@@ -143,12 +143,12 @@ h1 {
     gap: 20px;
     height: fit-content;
     background-color: var(--tertiary-color);
-    width: 100%; 
+    width: 100%;
     animation-name: view-left;
     animation-timing-function: linear;
     animation-timeline: view();
     animation-range-start: cover -1%;
-    animation-range-end: cover 25%; 
+    animation-range-end: cover 25%;
 }
 
 #projects-title {
@@ -244,7 +244,7 @@ h3 {
     animation-timing-function: linear;
     animation-timeline: view();
     animation-range-start: cover -10%;
-    animation-range-end: cover 35%; 
+    animation-range-end: cover 35%;
 }
 
 #about-me-title {
@@ -286,7 +286,7 @@ h3 {
     gap: 100px;
     height: fit-content;
     background-color: #999;
-    padding: 20px 40px; 
+    padding: 20px 40px;
     animation-name: view-left;
     animation-timing-function: linear;
     animation-timeline: view();
@@ -340,13 +340,13 @@ h3 {
     transition: .2s;
 }
 
-.contact-me-span:hover > .contact-me-div {
+.contact-me-span:hover>.contact-me-div {
     width: 280px;
     transition: .4s;
     padding: 0 10px;
 }
 
-.contact-me-span:hover > .bi {
+.contact-me-span:hover>.bi {
     animation: rotate .4s;
     animation-timing-function: linear;
 }
@@ -440,12 +440,21 @@ h3 {
         flex-direction: column;
         align-items: start;
         gap: 10px;
+        animation-name: none;
     }
 
     #projects {
         animation-name: none
     }
+
+    #projects-container a {
+        animation-name: fade-in;
+        animation-timing-function: linear;
+        animation-timeline: view();
+        animation-range-start: cover -10%;
+        animation-range-end: cover 35%;
     }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -488,9 +497,9 @@ h3 {
         font-size: 14px;
     }
 
-    .contact-me-span:hover > .contact-me-div {
+    .contact-me-span:hover>.contact-me-div {
         width: 200px;
-    } 
+    }
 }
 
 @media screen and (max-width: 500px) {
